@@ -9,7 +9,9 @@ class LoginViewMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: sizeFromWidth(10), vertical: sizeFromHeight(5)),
+      padding: EdgeInsets.symmetric(
+          horizontal: 20,
+          vertical: sizeFromHeight(5)),
       child: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,

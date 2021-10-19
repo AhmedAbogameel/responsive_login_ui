@@ -6,13 +6,12 @@ class LoginLogo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 50),
-      child: Center(
-        child: Row(
-          children: [
-            Expanded(flex: 3,child: Text('Login', style: getTextTheme.headline1, maxLines: 1,)),
-            Expanded(child: Icon(Icons.login_rounded,size: sizeFromHeight(6),color: kPrimaryColor,)),
-          ],
-        ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text('Login', style: getTextTheme.headline2, maxLines: 1,),
+          Icon(Icons.login_rounded,size: sizeFromHeight(6),color: kPrimaryColor,),
+        ],
       ),
     );
   }
